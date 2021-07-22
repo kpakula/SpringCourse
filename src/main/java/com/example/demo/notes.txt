@@ -1,0 +1,15 @@
+What is a singleton?
+
+* spring container creates only one instance of the bean, by default
+* it is cached in memory
+* all requests for the bean
+* * will return a shared reference to the same bean
+
+Spring bean scopes:
+
+a) Singleton - creates a single shared instance of the bean. Default scope
+b) Prototype - creates a new bean instance for each container request.
+c) Request - scoped to an HTTP web request. Only used for web apps.
+d) Session - scoped to an HTTP web session. Only used for web apps.
+e) Global-session - scoped to a global HTTP web session. Only used for web apps.
+
